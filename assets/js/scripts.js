@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function () {
       
         // Add success styles
         statusElement.classList.add("success-card");
-        statusElement.innerHTML = "I will do my best to get back to you as I can!";
+        statusElement.innerHTML = "I will do my best to get back to you as soon as I can!";
       
         // Remove the message after 5 seconds
         setTimeout(() => {
