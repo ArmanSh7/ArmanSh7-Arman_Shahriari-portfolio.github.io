@@ -1,0 +1,177 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Smooth gradient for the entire page */
+    color: #fff; /* Ensure text is readable on the dark background */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+section {
+    padding: 50px 15px;
+    margin: 0 auto;
+}
+
+section:not(:last-of-type) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Light separator between sections */
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+.hobbies {
+    padding: 60px 20px;
+    background-color: #1e252d;
+
+    color: #ffffff;
+}
+
+.hobbies .max-width {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.hobbies .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff; /* White title text for contrast */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Carousel Styling */
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel .card {
+    flex: 0 0 auto;
+    background: #ffffff; /* White card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    scroll-snap-align: center;
+    width: 280px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel .card:hover {
+    transform: scale(1.05);
+}
+
+.carousel .card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.carousel .card .box {
+    padding: 20px;
+}
+
+.carousel .card .text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0073e6; /* Blue text to match the section background */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.carousel .card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.8;
+    margin-top: 15px; /* Added space between the image and description */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hobbies .title {
+        font-size: 28px;
+    }
+
+    .carousel .card .text {
+        font-size: 18px;
+    }
+
+    .carousel .card p {
+        font-size: 13px;
+    }
+}
+
+.back-button-container {
+    text-align: left;
+    margin: 10px 0 20px 10px; /* Adjusts button position and spacing */
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #4a90e2; /* Soft blue matching the background */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #357ABD; /* Darker blue on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+body {
+    background: linear-gradient(135deg, #2C5364, #0F2027); /* Similar gradient to the main portfolio page */
+    color: #fff;
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+/* Unify typography with the main page */
+.hobbies .title {
+    font-size: 40px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-transform: none; /* Remove uppercase for consistency */
+}
+
+
+/* Center the Back to Portfolio button */
+.back-button-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.back-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2C5364;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0F2027;
+    color: #ffffff;
+}
+
